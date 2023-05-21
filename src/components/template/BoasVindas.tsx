@@ -1,16 +1,12 @@
 // https://unicode-table.com/en/1F44B/
-
-import AutenticacaoContext from "@/data/contexts/AutenticacaoContext"
 import { useContext } from "react"
 
 export default function BoasVindas() {
 
-    const { usuario } = useContext(AutenticacaoContext)
-
     function renderizarNome() {
         return (
             <span className="hidden sm:inline">
-                {usuario?.nome?.split(' ')[0]}
+                Teste auth
             </span>
         )
     }
